@@ -27,7 +27,6 @@ from transformers import (
     PreTrainedTokenizerFast,
 )
 
-from utils import print_gpu_info
 
 # Optional dependency used for constrained decoding in Stage 2.
 try:
@@ -72,7 +71,23 @@ TOKENIZER_HUB: dict[str, str] = {
 # Downstream evaluation labels.
 OUTPUT_LABELS: list[str] = ["Smoker", "Never Smoker", "Unknown"]
 
-
+def print_gpu_info():
+    if torch.cuda.is_available():
+        num_gpus = torch.cuda.device_count()
+        for gpu_idx in range(num_gpus):
+            total_mem = torch.cuda.get_device_properties(gpu_idx).total_memory
+            reserved_mem = torch.cuda.memory_reserved(gpu_idx)
+            allocated_mem = torch.cuda.memory_allocated(gpu_idx)
+            free_mem = reserved_mem - allocated_mem            
+            print(f"Device: {torch.cuda.get_device_name(gpu_idx)} (index: {gpu_idx})")
+            print(f"Total memory: {total_mem / 1024**3:.2f} GB")
+            print(f"Reserved memory: {reserved_mem / 1024**3:.2f} GB")
+            print(f"Allocated memory: {allocated_mem / 1024**3:.2f} GB")
+            print(f"Free memory within reserved: {free_mem / 1024**3:.2f} GB")
+            print("\n" + "-"*40 + "\n")
+    else:
+        print("Sadly GPU poor :(")
+        
 # -------------------------
 # Stage 1 loader
 # -------------------------
