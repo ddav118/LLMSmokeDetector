@@ -1,6 +1,22 @@
 # LLMSmokeDetector
 
-LLMSmokeDetector is a two stage pipeline for classifying tobacco smoking status from free text clinical notes, then evaluating predictive performance.
+## Contributors
+
+* [David M. Dávila-García, M.A.](https://orcid.org/0000-0002-9951-2270)
+* [Matthew J. Schuelke, PhD](https://orcid.org/0000-0002-6305-735X)
+* [Adam B. Wilcox, PhD](https://orcid.org/0000-0001-5755-1725)
+
+### Institutional affiliation
+Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine in Saint Louis, St. Louis, MO, USA
+
+## Associated publication
+
+This repository contains the code used in:
+
+Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. *JAMIA Open*. In press (Accepted December 22, 2025). https://doi.org/10.1093/jamiaopen/ooaf182
+
+LLMSmokeDetector is a two-stage pipeline for classifying tobacco smoking status from free-text clinical notes, then evaluating predictive performance.
+
 
 Core idea:
 
@@ -19,7 +35,6 @@ LLMSmokeDetector/
 ├── stage2.py
 ├── load_model.py
 ├── prompts.py
-├── utils.py
 ├── advanced_analytics.py
 ├── create_results_table.py
 ├── data/
@@ -39,7 +54,6 @@ Module responsibilities:
 - `stage2.py`: Stage 2 constrained decoding that maps Stage 1 output to one of the allowed labels.
 - `load_model.py`: Model and tokenizer loading for both stages. Defines `OUTPUT_LABELS`. Supports `LLMSMOKE_BASE_PATH` and `HF_HOME` environment variables.
 - `prompts.py`: Prompt templates for Stage 1 and Stage 2.
-- `utils.py`: Small helpers (for example, GPU memory printing used by `load_model.py`).
 - `advanced_analytics.py`: Metrics, bootstrap confidence intervals, clinical metrics, and confusion matrix utilities.
 - `create_results_table.py`: Formatting helper that converts the metrics summary CSV into publication ready strings (mean with confidence interval).
 
@@ -255,4 +269,23 @@ python run_analysis.py stage1 -h
 python run_analysis.py stage2 -h
 python run_analysis.py evaluate -h
 python run_analysis.py format-table -h
+```
+
+## Citation
+
+When using this resource, please cite:
+
+Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. *JAMIA Open*. In press (Accepted December 22, 2025). https://doi.org/10.1093/jamiaopen/ooaf182
+
+### BibTeX
+
+```bibtex
+@article{davila_garcia_llmsmokedetector_jamiaopen_2025,
+  title   = {Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case},
+  author  = {Dávila-García, David M and Schuelke, Matthew J and Wilcox, Adam B},
+  journal = {JAMIA Open},
+  year    = {2025},
+  note    = {Accepted; in press},
+  doi     = {10.1093/jamiaopen/ooaf182},
+}
 ```
