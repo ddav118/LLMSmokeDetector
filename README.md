@@ -3,8 +3,8 @@
 ## Contributors
 
 * [David M. Dávila-García, M.A.](https://orcid.org/0000-0002-9951-2270)
-* [Matthew J. Schuelke, PhD](https://orcid.org/0000-0002-6305-735X)
-* [Adam B. Wilcox, PhD](https://orcid.org/0000-0001-5755-1725)
+* [Matthew J. Schuelke, PhD](https://orcid.org/0000-0001-5755-1725)
+* [Adam B. Wilcox, PhD](https://orcid.org/0000-0002-6305-735X)
 
 ### Institutional affiliation
 Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine in Saint Louis, St. Louis, MO, USA
