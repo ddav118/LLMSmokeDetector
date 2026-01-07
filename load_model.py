@@ -39,10 +39,6 @@ except Exception:  # pragma: no cover
 # Configuration
 # -------------------------
 
-# Default locations match the current project scripts.
-DEFAULT_BASE_PATH = "/storage2/fs1/a.wilcox/Active"
-DEFAULT_HF_HOME = "/storage2/fs1/a.wilcox/Active/huggingface_cache"
-
 # Allow override without code edits.
 BASE_PATH = os.environ.get("LLMSMOKE_BASE_PATH", DEFAULT_BASE_PATH)
 HF_HOME = os.environ.get("HF_HOME", DEFAULT_HF_HOME)
