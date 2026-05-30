@@ -4,10 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 
-<!-- After you mint a Zenodo DOI (see "Archiving a release on Zenodo" below),
-     add the archive badge here:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
 
 A two-stage large language model (LLM) pipeline that extracts tobacco smoking status from free-text clinical discharge summaries and evaluates predictive performance. This is the companion code for a JAMIA Open Brief Communication comparing six lightweight open-source LLMs against the cTAKES NLP system. See the [associated publication](#associated-publication).
 
