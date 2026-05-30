@@ -39,6 +39,14 @@ except Exception:  # pragma: no cover
 # Configuration
 # -------------------------
 
+# Default locations, overridable via the environment variables below.
+# LLMSMOKE_BASE_PATH should point to a directory that may contain a "LLMs"
+# subfolder with the local model directories named in MODEL_CONFIGS. If a
+# model is not found locally, several loaders fall back to downloading from
+# the Hugging Face Hub.
+DEFAULT_BASE_PATH = os.getcwd()
+DEFAULT_HF_HOME = os.path.expanduser("~/.cache/huggingface")
+
 # Allow override without code edits.
 BASE_PATH = os.environ.get("LLMSMOKE_BASE_PATH", DEFAULT_BASE_PATH)
 HF_HOME = os.environ.get("HF_HOME", DEFAULT_HF_HOME)
