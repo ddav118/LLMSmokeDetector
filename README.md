@@ -11,9 +11,9 @@ Institute for Informatics, Data Science & Biostatistics, Washington University S
 
 ## Associated publication
 
-This repository contains the code used in:
+This repository contains source code used in:
 
-Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. *JAMIA Open*. In press (Accepted December 22, 2025). https://doi.org/10.1093/jamiaopen/ooaf182
+Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. Jamia Open. 2026 Feb 1;9(1):ooaf182. doi:[10.1093/jamiaopen/ooaf182](https://doi.org/10.1093/jamiaopen/ooaf182)
 
 LLMSmokeDetector is a two-stage pipeline for classifying tobacco smoking status from free-text clinical notes, then evaluating predictive performance.
 
@@ -275,17 +275,24 @@ python run_analysis.py format-table -h
 
 When using this resource, please cite:
 
-Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. *JAMIA Open*. In press (Accepted December 22, 2025). https://doi.org/10.1093/jamiaopen/ooaf182
+Dávila-García DM, Schuelke MJ, Wilcox AB. Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case. Jamia Open. 2026 Feb 1;9(1):ooaf182. doi:[10.1093/jamiaopen/ooaf182](https://doi.org/10.1093/jamiaopen/ooaf182)
 
 ### BibTeX
 
 ```bibtex
-@article{davila_garcia_llmsmokedetector_jamiaopen_2025,
-  title   = {Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case},
-  author  = {Dávila-García, David M and Schuelke, Matthew J and Wilcox, Adam B},
-  journal = {JAMIA Open},
-  year    = {2025},
-  note    = {Accepted; in press},
-  doi     = {10.1093/jamiaopen/ooaf182},
+@article{10.1093/jamiaopen/ooaf182,
+    author = {Dávila-García, David M and Schuelke, Matthew J and Wilcox, Adam B},
+    title = {Lightweight open-source large language models versus cTAKES for information extraction from discharge summaries: tobacco smoking status test case},
+    journal = {JAMIA Open},
+    volume = {9},
+    number = {1},
+    pages = {ooaf182},
+    year = {2026},
+    month = {02},
+    abstract = {To compare lightweight open-source large language models (LLMs) with cTAKES, a state-of-the-art natural language processing (NLP) system, in an information extraction task from hospitalization discharge summaries.Two readers annotated 250 randomly sampled adult discharge summaries (BJC HealthCare, 2018-2023) for tobacco smoking status as “Smoker,” “Never smoker,” “Unknown.” Six LLMs (Llama-3 [1B-70B], gpt-oss-20B, MedGemma-27B) and cTAKES extracted smoking status from summaries. Performance was benchmarked against consensus annotations using weighted F1-score, macro F1-score, and per-class F1-scores and a noninferiority test.Inter-reader agreement was excellent (κ = 0.91). LLM size (2.3-47.3 GB) and inference time (2.5-14.5 s/note) varied. gpt-oss-20B achieved non-inferior performance vs cTAKES (F1 = 0.99 vs 0.97; P \&lt; .021).The high accuracy and efficiency of gpt-oss-20B support its potential as a practical, open-source alternative to traditional NLP for clinical information extraction.Lightweight LLMs can be applied for use across diverse clinical information extraction tasks without the need for task-specific fine-tuning.Electronic health records contain large amounts of patient-related information, such as tobacco smoking status and/or other important details regarding patient behaviors. This information is typically written in an unstructured and/or free-text form, making it difficult to extract for downstream use to improve patient care, reporting, and research. Extracting such information accurately and efficiently allows clinicians and researchers to improve patient care and will ultimately benefit population health. In this study, we compared cTAKES, a state-of-the-art natural language processing (NLP) system, against 6 lightweight open-source large language models (LLMs) to extract tobacco smoking status from 250 hospital discharge summaries. After showing excellent agreement for extracting smoking status annotation from hospital discharge records by 2 readers, we showed that a 2-stage LLM inference approach accurately generated structured outputs from unstructured free-text. Finally, we found that the top-performing LLM, gpt-oss-20B, exhibited strong performance similar to cTAKES on the clinical information extraction task. These findings suggest that open-source LLMs accurately perform clinical information extraction tasks in a secure, low-cost, and practical approach. Extending this approach to perform other information extraction tasks will facilitate healthcare systems to unlock the use of unstructured data to enhance clinical care, reporting and research.},
+    issn = {2574-2531},
+    doi = {10.1093/jamiaopen/ooaf182},
+    url = {https://doi.org/10.1093/jamiaopen/ooaf182},
+    eprint = {https://academic.oup.com/jamiaopen/article-pdf/9/1/ooaf182/66416210/ooaf182.pdf},
 }
 ```
