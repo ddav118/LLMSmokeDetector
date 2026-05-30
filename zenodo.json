@@ -1,0 +1,51 @@
+{
+    "creators": [
+        {
+            "name": "D\u00e1vila-Garc\u00eda, David M.",
+            "orcid": "0000-0002-9951-2270",
+            "affiliation": "Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine in St. Louis",
+            "type": "ProjectMember"
+        },
+        {
+            "name": "Schuelke, Matthew J.",
+            "orcid": "0000-0001-5755-1725",
+            "affiliation": "Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine in St. Louis",
+            "type": "ProjectMember"
+        },
+        {
+            "name": "Wilcox, Adam B.",
+            "orcid": "0000-0002-6305-735X",
+            "affiliation": "Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine in St. Louis",
+            "type": "ProjectMember"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Landreth, Trudy",
+            "affiliation": "Washington University School of Medicine in St. Louis",
+            "type": "DataCurator"
+        }
+    ],
+    "title": "LLMSmokeDetector: a two-stage open-source LLM pipeline for tobacco smoking status extraction from clinical discharge summaries",
+    "description": "Source code for a two-stage large language model (LLM) inference pipeline that extracts tobacco smoking status (Smoker, Never smoker, Unknown) from free-text hospital discharge summaries. Stage 1 generates an unstructured classification per note; Stage 2 maps that output to a single structured label using constrained decoding. Evaluation computes multiclass and per-class metrics with bootstrap confidence intervals and confusion matrices. Companion code for the JAMIA Open Brief Communication comparing six lightweight open-source LLMs (Llama-3 1B-70B, gpt-oss-20B, MedGemma-27B) against the cTAKES NLP system.",
+    "version": "1.0.0",
+    "access_right": "open",
+    "related_identifiers": [
+        {
+            "identifier": "https://doi.org/10.1093/jamiaopen/ooaf182",
+            "relation": "isSupplementTo",
+            "resource_type": "publication-article"
+        }
+    ],
+    "keywords": [
+        "large language models",
+        "tobacco smoking status",
+        "natural language processing",
+        "clinical informatics",
+        "information extraction",
+        "electronic health records"
+    ],
+    "license": "mit",
+    "upload_type": "software",
+    "language": "eng"
+}
