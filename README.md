@@ -250,7 +250,7 @@ Authors are affiliated with the Institute for Informatics, Data Science & Biosta
 
 ## Citation
 
-If you use this software, please cite the paper above. A machine-readable `CITATION.cff` is included, so GitHub's "Cite this repository" button will generate APA and BibTeX automatically.
+If you use this software, please cite the paper above.
 
 ### BibTeX
 
