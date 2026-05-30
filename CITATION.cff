@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the associated paper (the preferred
+  citation below). To reference a specific archived code version, also cite the
+  Zenodo DOI for that release.
+title: LLMSmokeDetector
+abstract: >-
+  A two-stage large language model pipeline for extracting tobacco smoking
+  status (Smoker, Never smoker, Unknown) from free-text clinical discharge
+  summaries, with evaluation utilities that compute multiclass and per-class
+  metrics, bootstrap confidence intervals, and confusion matrices. Companion
+  code for a JAMIA Open Brief Communication comparing lightweight open-source
+  large language models against the cTAKES NLP system.
+type: software
+authors:
+  - family-names: Dávila-García
+    given-names: David M.
+    orcid: https://orcid.org/0000-0002-9951-2270
+    affiliation: >-
+      Institute for Informatics, Data Science & Biostatistics, Washington
+      University School of Medicine in St. Louis
+  - family-names: Schuelke
+    given-names: Matthew J.
+    orcid: https://orcid.org/0000-0001-5755-1725
+    affiliation: >-
+      Institute for Informatics, Data Science & Biostatistics, Washington
+      University School of Medicine in St. Louis
+  - family-names: Wilcox
+    given-names: Adam B.
+    orcid: https://orcid.org/0000-0002-6305-735X
+    affiliation: >-
+      Institute for Informatics, Data Science & Biostatistics, Washington
+      University School of Medicine in St. Louis
+license: MIT
+repository-code: https://github.com/ddav118/LLMSmokeDetector
+url: https://github.com/ddav118/LLMSmokeDetector
+version: 1.0.0
+date-released: "2026-05-30"
+keywords:
+  - large language models
+  - tobacco smoking status
+  - natural language processing
+  - clinical informatics
+  - information extraction
+  - electronic health records
+preferred-citation:
+  type: article
+  title: >-
+    Lightweight open-source large language models versus cTAKES for information
+    extraction from discharge summaries: tobacco smoking status test case
+  authors:
+    - family-names: Dávila-García
+      given-names: David M.
+      orcid: https://orcid.org/0000-0002-9951-2270
+    - family-names: Schuelke
+      given-names: Matthew J.
+      orcid: https://orcid.org/0000-0001-5755-1725
+    - family-names: Wilcox
+      given-names: Adam B.
+      orcid: https://orcid.org/0000-0002-6305-735X
+  journal: JAMIA Open
+  year: 2026
+  month: 2
+  volume: 9
+  issue: 1
+  doi: 10.1093/jamiaopen/ooaf182
+  issn: 2574-2531
+  url: https://doi.org/10.1093/jamiaopen/ooaf182
