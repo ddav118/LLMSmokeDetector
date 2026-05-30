@@ -3,6 +3,7 @@
 [![Paper DOI](https://img.shields.io/badge/Paper-10.1093%2Fjamiaopen%2Fooaf182-blue)](https://doi.org/10.1093/jamiaopen/ooaf182)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20460654.svg)](https://doi.org/10.5281/zenodo.20460654)
 
 
 A two-stage large language model (LLM) pipeline that extracts tobacco smoking status from free-text clinical discharge summaries and evaluates predictive performance. This is the companion code for a JAMIA Open Brief Communication comparing six lightweight open-source LLMs against the cTAKES NLP system. See the [associated publication](#associated-publication).
